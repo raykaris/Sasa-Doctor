@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <a class="logo" href="index.html">
+            <img src="/imgs/logo.webp">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="service">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="appointmentForm">
+        <h2 class="title">Book an Appointment</h2>
+        <form onsubmit="bookAppointment(event)">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
+            <input type="date" id="date" required>
+            <select id="doctor" required>
+                <option value="">-- Choose Doctor --</option>
+                <option value="Dr. Celine">Dr. Celine - General Appointment</option>
+                <option value="Dr. Ryan">Dr. Ryan - Cardiologist </option>
+                <option value="Dr. Collins">Dr. Collins - Dentist</option>
+                <option value="Dr. Kellen">Dr. Kellen - NICU</option>
+                <option value="Dr. Thiong'o">Dr. Thiong'o = Counselor</option>
+                <option value="Dr. Caroline">Dr. Caroline - Eye Specialist</option>
+            </select>
+            <a href="payment.html"><button class="btn" type="submit">Proceed to Payment</button></a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

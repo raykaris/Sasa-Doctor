@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <a class="logo" href="index.html">
+            <img src="/imgs/logo.webp">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="service"><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="feedbackForm">
+        <h2 class="title">Appointment Feedback</h2>
+        <form onsubmit="submitFeedback(event)">
+            <input type="text" id="patientName" placeholder="Your Name" required>
+            <select id="rating" required>
+                <option value="">-- Rate Our Services --</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Average</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Best</option>
+                <option value="5">5 - Awesome</option>
+            </select>
+            <textarea id="comments" rows="4" placeholder="Additional Comments"></textarea>
+            <button class="btn" type="submit">Submit Feedback</button>
+        </form>
+        <h3 class="title">Recent Feedback</h3>
+        <ul id="feedbackList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

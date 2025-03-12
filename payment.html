@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <a class="logo" href="index.html">
+            <img src="/imgs/logo.webp">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="service"><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div id="paymentForm">
+            <h2 class="title">Payment</h2>
+            <p style="text-align: center;">Total Fee: <strong>Ksh.500</strong></p>
+            <select id="payment" required style="width: 80%; margin: 0 auto; display: block; padding: 10px;">
+                <option value="">-- Select Payment Option --</option>
+                <option value="M-Pesa">M-pesa</option>
+                <option value="Credit Card">Credit card</option>
+                <option value="Debit Card">Debit card</option>
+            </select>
+            <div class="pay">
+                <button class="btn" onclick="processPayment()">Pay Now</button>
+            </div>
+            <p id="paymentStatus"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
