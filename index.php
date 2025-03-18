@@ -26,7 +26,7 @@
                         <li><a href="#">Eye Check-up</a></li>
                     </ul>
                 </li>
-                <li><a href="login.php"  id="open">Register</a></li>
+                <li><a href="login.php">Register</a></li>
                 <li><a href="#" id="contact">Contact Us</a></li>
             </ul>
         </nav>

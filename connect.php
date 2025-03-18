@@ -3,7 +3,7 @@
 $loginDbHost = "localhost";
 $loginDbUser = "root"; 
 $loginDbPass = ""; 
-$loginDbName = "login";
+$loginDbName = "sasa-login";
 
 $loginConn = new mysqli($loginDbHost, $loginDbUser, $loginDbPass, $loginDbName);
 if ($loginConn->connect_error) {

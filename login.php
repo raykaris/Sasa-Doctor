@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signIn'])) {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container-l" id="loginForm" style="display: none;">
+<div class="container-l" id="loginForm">
         <div class="content-l">
             <span class="closeBtn">&times;</span>
             <form id="loginForm" method="post" action="register.php">
